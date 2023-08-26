@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 function copyHtml() {
   return gulp
     .src('src/html/**/*.html')
-    .pipe(replace('src/js/', './media/js/'))
+    .pipe(replace('src/js/', './assets/js/'))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 }

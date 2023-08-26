@@ -17,5 +17,5 @@ gulp.task('process-images', imageProcessingTask.processImages);
 gulp.task('watch', watchTask.startWatch);
 
 // Tarea predeterminada que se ejecuta al escribir 'gulp' en la terminal
-// gulp.task('default', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images', 'watch'));
-gulp.task('default', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images'));
+gulp.task('default', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images', 'watch'));
+// gulp.task('default', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images'));
