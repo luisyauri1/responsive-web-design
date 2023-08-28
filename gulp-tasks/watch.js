@@ -10,6 +10,9 @@ function startWatch() {
   gulp.watch('src/js/**/*.js', gulp.series('uglify'));
   gulp.watch('src/**/*.html', gulp.series('copy-html'));
   gulp.watch('src/media/**/*', gulp.series('process-images'));
+  gulp.watch('src/scss/**/*.scss').on('change', browserSync.reload);
+  gulp.watch('src/js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('src/**/*.html').on('change', browserSync.reload);
 }
 
 exports.startWatch = startWatch;
