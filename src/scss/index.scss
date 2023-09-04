@@ -1,16 +1,38 @@
+:root {
+  --color-5D50C6: #5D50C6;
+  --color-EEEEEE: #EEEEEE;
+  --color-222831: #222831;
+  --color-19182580 : #19182580;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('src/media/fonts/CircularStd-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-Bold';
+  src: url('src/media/fonts/CircularStd-Bold.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .app-center {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 16px 0;
+  margin: 0 16px;
 }
 
 .app-container {
   width: 100%;
 
   @media screen and (min-width: 1024px) {
-    width: 896px;
+    width: 1000px;
   }
 
 }
@@ -22,6 +44,7 @@
   grid-template-rows: auto;
   justify-content: space-between;
   align-items: center;
+  margin: 32px 0;
 
 
   @media screen and (min-width: 1024px) {
@@ -63,4 +86,42 @@
   @media screen and (min-width: 1024px) {
     display: flex;
   }
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  border-radius: 100px;
+
+  font-family: CircularStd-Bold, serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16.8px;
+}
+
+.btn-primary {
+  background: var(--color-5D50C6);
+  color: var(--color-EEEEEE);
+}
+
+.btn-link {
+  background: transparent;
+  color: var(--color-222831);
+}
+
+.btn-link-menu {
+  margin: 16px 32px;
+  padding: 0;
+  background: transparent;
+  color: var(--color-19182580);
+}
+
+.btn-link-menu--active {
+  color: var(--color-222831);
 }
