@@ -1,0 +1,93 @@
+.categories {
+  display: grid;
+  grid-template-areas:
+    'categories-header'
+    'categories-body';
+  justify-content: center;
+  justify-items: center;
+  padding: 32px 0;
+  gap: 32px 0;
+
+  @media screen and (min-width: 1024px) {
+    padding: 64px 0;
+    gap: 64px 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-areas: 'categories-header categories-body';
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.categories-header {
+  display: flex;
+  flex-direction: column;
+  grid-area: categories-header;
+  gap: 16px 0;
+
+  @media screen and (min-width: 1440px) {
+    width: 444px;
+  }
+}
+
+.categories-scroll {
+  @media screen and (min-width: 1440px) {
+    //width: 556px;
+    //overflow-x: scroll;
+  }
+}
+
+.categories-body {
+  grid-area: categories-body;
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 0 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    //width: 148%;
+  }
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px 0;
+  padding: 32px;
+  text-align: center;
+  border-radius: 32px;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  background: var(--color-FFFFFF);
+
+  @media screen and (min-width: 1024px) {
+    width: 184px;
+  }
+}
+
+.category-card--shadow {
+  border: none;
+  box-shadow:
+    0 0 0 0 rgba(0, 0, 0, 0.1),
+    0 41px 89px 0 rgba(0, 0, 0, 0.1);
+}
+
+.category-card__title {
+  color: var(--color-191825);
+  font-family: CircularStd-Bold, serif;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.category-card__description {
+  color: var(--color-19182580);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+}
