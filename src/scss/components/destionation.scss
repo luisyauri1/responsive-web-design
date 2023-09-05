@@ -1,0 +1,118 @@
+.destination {
+  display: grid;
+  grid-template-areas:
+    'destination-header'
+    'destination-actions'
+    'destination-body';
+  padding: 32px 0;
+  gap: 32px 0;
+
+  @media screen and (min-width: 1024px) {
+    padding: 64px 0;
+    gap: 64px 0;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-areas:
+      'destination-header destination-actions'
+      'destination-body destination-body';
+    justify-content: space-between;
+  }
+}
+
+.destination-header {
+  display: flex;
+  flex-direction: column;
+  grid-area: destination-header;
+  gap: 16px 0;
+}
+
+.destination-actions {
+  grid-area: destination-actions;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    gap: 0 32px;
+  }
+}
+
+.destination-body {
+  grid-area: destination-body;
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 0 32px;
+  }
+}
+
+.destination-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.destination-card__img {
+  border-radius: 32px 32px 0 0;
+  width: 100%;
+  height: 314px;
+  object-fit: cover;
+}
+
+.destination-card-info {
+  border-radius: 0 0 32px 32px;
+  background: var(--color-FFFFFF);
+  box-shadow:
+    0 0 0 0 rgba(0, 0, 0, 0.05),
+    0 32px 71px 0 rgba(0, 0, 0, 0.05),
+    0 128px 128px 0 rgba(0, 0, 0, 0.04),
+    0 288px 173px 0 rgba(0, 0, 0, 0.03),
+    0 513px 205px 0 rgba(0, 0, 0, 0.01),
+    0 801px 224px 0 rgba(0, 0, 0, 0);
+  padding: 32px;
+}
+
+.destination-card-info__price {
+  color: var(--color-F85E9F);
+  font-family: CircularStd-Bold, serif;
+  font-size: 23px;
+  line-height: 120%;
+  margin: 0 0 8px 0;
+}
+
+.destination-card-info__title {
+  color: var(--color-191825);
+  font-family: CircularStd-Bold, serif;
+  font-size: 23px;
+  line-height: 120%;
+  margin: 0 0 16px 0;
+}
+
+.destination-card-info__place {
+  color: var(--color-19221EBF);
+  font-size: 18px;
+  line-height: 160%;
+  margin: 0 0 32px 0;
+}
+
+.destination-box-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.destination-box-star__number {
+  color: var(--color-FF5722);
+  font-family: CircularStd-Bold, serif;
+  font-size: 23px;
+  line-height: 120%;
+}
