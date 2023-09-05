@@ -1,0 +1,46 @@
+.nav {
+  display: grid;
+  grid-template-areas: 'logo menu';
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+
+  @media screen and (min-width: 1024px) {
+    grid-template-areas: 'menu logo actions';
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-areas: 'logo list actions';
+  }
+}
+
+.nav-logo {
+  grid-area: logo;
+}
+
+.nav-menu {
+  grid-area: menu;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.nav-list {
+  grid-area: list;
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.nav-actions {
+  grid-area: actions;
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
