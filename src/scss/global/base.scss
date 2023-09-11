@@ -7,6 +7,10 @@ html {
   font-family: Inter-Regular, serif;
 }
 
+input {
+  all: unset;
+}
+
 .app-center {
   display: flex;
   flex-direction: column;
