@@ -1,0 +1,125 @@
+.features {
+  display: grid;
+  grid-template-areas:
+    'features-box'
+    'features-main';
+  padding: 32px 0;
+  gap: 64px 0;
+
+  @media screen and (min-width: 1024px) {
+    padding: 64px 0;
+    gap: 70px 0;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-areas: 'features-main features-box';
+    justify-content: space-between;
+    gap: 70px;
+  }
+}
+
+.features-box {
+  justify-self: center;
+  grid-area: features-box;
+  max-width: 100%;
+  width: 350px;
+
+  @media screen and (min-width: 1024px) {
+    width: 693px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: none;
+    width: 438px;
+  }
+}
+
+.features-box__img {
+  max-width: 100%;
+  width: 350px;
+
+  @media screen and (min-width: 1024px) {
+    width: auto;
+    max-width: none;
+  }
+}
+
+.features-main {
+  grid-area: features-main;
+  gap: 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+
+.features-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.features-item {
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 32px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.features-item--line {
+  border: 1px solid var(--color-1918251A);
+}
+
+.features-item__box {
+  border-radius: 32px;
+  background: var(--color-000000);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 32px 0;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 32px 0 0;
+  }
+}
+
+.features-item__box--orange {
+  background: var(--color-FF5722);
+}
+
+.features-item__box--yellow {
+  background: var(--color-FACD49);
+}
+
+.features-item__box--pink {
+  background: var(--color-F85E9F);
+}
+
+.features-item__title {
+  margin-bottom: 8px;
+  color: var(--color-191825);
+  font-family: CircularStd-Bold, serif;
+  font-size: 23px;
+  line-height: 120%;
+}
+
+.features-item__description {
+  color: var(--color-19182580);
+  font-size: 18px;
+  line-height: 160%;
+}
