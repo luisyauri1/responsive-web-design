@@ -1,0 +1,25 @@
+.bg-1 {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.bg-1-img {
+  position: relative;
+  top: -233px;
+  left: -218px;
+  width: 500px;
+  height: 500px;
+}
