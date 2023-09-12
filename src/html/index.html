@@ -8,6 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Web Design</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/scss/index.scss" />
   </head>
   <body>
@@ -28,10 +29,10 @@
               <button class="btn btn-primary">Sign Up</button>
             </div>
           </nav>
-          <div class='bg-1'>
-            <img class='bg-1-img' src='src/media/svg/bg_1.svg' alt='bg_1'>
+          <div class="bg-1">
+            <img class="bg-1-img" src="src/media/svg/bg_1.svg" alt="bg_1" />
           </div>
-          <main class="main">
+          <main class="main" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="main-content">
               <div class="main-content-subtitle">
                 <p>Explore the world!</p>
@@ -55,14 +56,15 @@
         </header>
       </div>
     </div>
-    <div class='bg-relative'>
-      <div class='bg-2'>
-        <img class='bg-2-img' src='src/media/svg/bg_2.svg' alt='bg_2'>
+    <div class="bg-relative">
+      <div class="bg-2">
+        <img class="bg-2-img" src="src/media/svg/bg_2.svg" alt="bg_2" />
       </div>
     </div>
     <div class="app-center">
       <div class="app-container">
-        <section class="logos">
+        <section class="logos" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <img class="bg-3-img" src="src/media/svg/bg_3.svg" alt="bg_3" />
           <div class="logos-container">
             <img src="src/media/svg/tripadvisor.svg" alt="tripadvisor" />
             <img src="src/media/svg/expedia.svg" alt="expedia" />
@@ -71,7 +73,7 @@
             <img src="src/media/svg/orbitz.svg" alt="orbitz" />
           </div>
         </section>
-        <section class="categories">
+        <section class="categories" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <div class="categories-header">
             <p class="subtitle">Services</p>
             <h2 class="title">Our top value categories for you</h2>
@@ -100,7 +102,7 @@
             </div>
           </div>
         </section>
-        <section class="destination">
+        <section class="destination" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <div class="destination-header">
             <p class="subtitle">Top Destination</p>
             <h2 class="title">Explore top destination</h2>
@@ -148,7 +150,7 @@
             </div>
           </div>
         </section>
-        <section class="travel">
+        <section class="travel" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <div class="travel-box">
             <img class="travel-img" src="src/media/svg/girl.svg" alt="girl" />
           </div>
@@ -181,7 +183,7 @@
             </div>
           </div>
         </section>
-        <section class="features">
+        <section class="features" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <div class="features-box">
             <img class="features-box__img" src="src/media/svg/features.svg" alt="features" />
           </div>
@@ -225,7 +227,7 @@
             </div>
           </div>
         </section>
-        <section class="testimonials">
+        <section class="testimonials" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <div class="testimonials-header">
             <p class="subtitle testimonials-center">Testimonials</p>
             <h2 class="title testimonials-center">Trust our clients</h2>
@@ -255,7 +257,8 @@
             <button class="btn btn-circle-purple"><img src="src/media/svg/arrow-right.svg" alt="arrow-right" /></button>
           </div>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <img class="bg-4-img" src="src/media/svg/bg_4.svg" alt="bg_4" />
           <p class="subtitle subscribe__title">subscribe to our newsletter</p>
           <p class="subscribe__text">Prepare yourself & let’s explore the beauty of the world</p>
           <div class="subscribe-container">
@@ -266,7 +269,7 @@
             <button class="btn btn-primary">Subscribe</button>
           </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <div class="footer-info">
             <img src="src/media/svg/logo.svg" alt="logo" />
             <p class="footer-info__text">
@@ -330,6 +333,7 @@
         </footer>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="src/js/index.js"></script>
   </body>
 </html>
