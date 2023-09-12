@@ -16,6 +16,11 @@ gulp.task('process-images', imageProcessingTask.processImages);
 // Tarea de observación (watch)
 gulp.task('watch', watchTask.startWatch);
 
-// Tarea predeterminada que se ejecuta al escribir 'gulp' en la terminal
-gulp.task('default', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images', 'watch'));
-// gulp.task('default', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images'));
+// Define una tarea 'start' que ejecuta las tareas necesarias para el desarrollo
+gulp.task('start', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images', 'watch'));
+
+// Define una tarea 'build' que ejecuta las tareas necesarias para la construcción de producción
+gulp.task('build', gulp.series('clean-dist', 'sass', 'uglify', 'copy-html', 'process-images'));
+
+// Tarea por defecto (para ejecutar con 'npm run start')
+gulp.task('default', gulp.series('start'));
