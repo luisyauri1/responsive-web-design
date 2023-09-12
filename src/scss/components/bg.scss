@@ -20,8 +20,8 @@
   position: relative;
   top: -233px;
   left: -218px;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
 }
 
 .bg-relative {
@@ -34,18 +34,26 @@
   @media screen and (min-width: 1024px) {
     display: flex;
     position: absolute;
-    top: 0;
+    top: -119px;
     right: 0;
     z-index: -1;
     overflow: hidden;
     width: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 22px;
   }
 }
 
 .bg-2-img {
   position: relative;
   top: 0;
-  right: -800px;
-  width: 500px;
-  height: 500px;
+  right: -729px;
+  width: 1000px;
+  height: 1000px;
+
+  @media screen and (min-width: 1440px) {
+    right: -1076px;
+  }
 }
